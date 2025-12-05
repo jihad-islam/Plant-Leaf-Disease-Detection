@@ -1,4 +1,70 @@
-/* Additional custom styles */
-.App {
-  text-align: center;
+/* Additional custom styles for Plant Disease Detection */
+
+/* Ensure images don't overflow their containers */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth transitions for hover effects */
+button,
+select,
+.hover\:border-primary-green {
+  transition: all 0.3s ease;
+}
+
+/* Prevent text overflow and ensure readability */
+h1,
+h2,
+h3,
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Fade in animation for results */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.space-y-4 > *,
+.space-y-6 > * {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Better focus states for accessibility */
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid #22c55e;
+  outline-offset: 2px;
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 640px) {
+  button,
+  select,
+  label {
+    min-height: 44px;
+  }
 }
