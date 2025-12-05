@@ -1,0 +1,45 @@
+# Backend .gitignore
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Model files (large files)
+models/*.pth
+models/*.h5
+models/*.pb
+*.pth
+*.h5
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Uploaded images (temporary)
+uploads/
+temp/
